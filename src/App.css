@@ -39,7 +39,7 @@
 .leftbox h2{
   color: rgb(244, 206, 20);
   font-size: 30pt;
-  margin-right: 200px;
+  margin-right: 250px;
   margin-top: 20px;
 }
 
@@ -52,5 +52,8 @@
 
 .rightbox{
   margin-top: 20px;
-  border-radius: 50px;
+}
+
+.rightbox img {
+  border-radius: 30px;
 }
