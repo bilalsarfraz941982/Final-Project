@@ -32,4 +32,25 @@
 
 .headermain{
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftbox h2{
+  color: rgb(244, 206, 20);
+  font-size: 30pt;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+.leftbox h3{
+  color: white;
+}
+.leftbox p{
+  color: white;
+}
+
+.rightbox{
+  margin-top: 20px;
+  border-radius: 20px;
 }
