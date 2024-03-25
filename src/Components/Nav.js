@@ -10,12 +10,12 @@ function Nav() {
     </div>
     <div className='navigationList'>
         <ul className='navList'>
-            <li><a>Home</a></li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Reservation</li>
-            <li>Order Online</li>
-            <li>Login</li>
+            <a>Home</a>
+            <a>About</a>
+            <a>Menu</a>
+            <a>Reservation</a>
+            <a>Order Online</a>
+            <a>Login</a>
         </ul>
     </div>
     </div>
