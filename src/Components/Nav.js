@@ -2,8 +2,7 @@ import React from 'react'
 import LLName from './Assets/littlelemonlogo.png'
 
 function Nav() {
-  return (
-   <>
+  return(
     <div className='mainNav'>
      <div className='navigationPicture'>
        <img src={LLName} height={60} width={200}/>
@@ -19,7 +18,6 @@ function Nav() {
         </ul>
      </div>
     </div>
-   </>
   )
 }
 

@@ -3,31 +3,28 @@
   padding: 0;
 }
 
-.App{
-  justify-content: center;
-}
-
 .mainNav{
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  margin-bottom: 10px;
 }
 
 .navigationPicture{
   padding-top: 20px;
-  margin-right: 100px;
+  margin-right: 110px;
 }
 .navList{
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   padding-top: 40px;
 }
 
 .navList {
   color:rgb(73, 94,87);
   font-weight: 500;
+  font-size: large;
 }
 
 .headermain{
