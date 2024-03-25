@@ -54,3 +54,7 @@
 .rightbox img {
   border-radius: 30px;
 }
+
+.mainhl{
+  justify-content: center;
+}
