@@ -36,6 +36,7 @@
 .leftbox h2{
   color: rgb(244, 206, 20);
   font-size: 30pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin-right: 290px;
   margin-top: 20px;
 }
@@ -55,6 +56,42 @@
   border-radius: 30px;
 }
 
-.mainhl{
+.hightlightHeader{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 400px;
+  margin-top: 40PX;
 }
+
+.hightlightHeader h1{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 30pt
+}
+
+.masterswmenu{
+  margin-top: 40px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px
+}
+
+.masterswmenu .dish1 .nameandprice1{
+ display: flex;
+ flex-wrap: wrap;
+ gap :150px
+}
+
+.masterswmenu .dish1 .delivery{
+  display: flex;
+  flex-wrap: wrap;
+  gap:115px;
+}
+
+.masterswmenu .dish2 .nameandprice1{
+  display: flex;
+  flex-wrap: wrap;
+  gap :150px
+ }
