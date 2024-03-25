@@ -4,7 +4,7 @@
 }
 
 .App{
-  align-content: center;
+  justify-content: center;
 }
 
 .mainNav{
@@ -39,7 +39,7 @@
 .leftbox h2{
   color: rgb(244, 206, 20);
   font-size: 30pt;
-  margin-right: 250px;
+  margin-right: 290px;
   margin-top: 20px;
 }
 

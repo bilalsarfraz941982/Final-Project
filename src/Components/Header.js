@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderImage from './Assets/restauranfood.jpg'
 import Headerbg from './Assets/headerbg.jpg'
- 
+
 function Header() {
   return (
     <div className='headermain' style={{backgroundImage:`url(${Headerbg})`}}>
@@ -12,7 +12,7 @@ function Header() {
         <button style={{backgroundColor:"rgb(244, 206, 20)" , height:"50px" , width:"200px" , borderRadius:"20px", fontSize:"large"}}>Reserve a table</button>
       </div>
       <div className='rightbox'>
-        <img src={HeaderImage} height={400} width={400}/>
+        <img src={HeaderImage} height={400} width={350}/>
       </div>
     </div>
   )

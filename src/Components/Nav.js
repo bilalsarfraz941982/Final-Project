@@ -5,10 +5,10 @@ function Nav() {
   return (
    <>
     <div className='mainNav'>
-    <div className='navigationPicture'>
+     <div className='navigationPicture'>
        <img src={LLName} height={60} width={200}/>
-    </div>
-    <div className='navigationList'>
+     </div>
+     <div className='navigationList'>
         <ul className='navList'>
             <a>Home</a>
             <a>About</a>
@@ -17,7 +17,7 @@ function Nav() {
             <a>Order Online</a>
             <a>Login</a>
         </ul>
-    </div>
+     </div>
     </div>
    </>
   )
