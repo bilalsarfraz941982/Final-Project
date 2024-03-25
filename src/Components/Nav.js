@@ -6,10 +6,10 @@ function Nav() {
    <>
     <div className='mainNav'>
     <div className='navigationPicture'>
-       <img src={LLName} height={200} width={200}/>
+       <img src={LLName} height={60} width={200}/>
     </div>
     <div className='navigationList'>
-        <ul>
+        <ul className='navList'>
             <li><a>Home</a></li>
             <li>About</li>
             <li>Menu</li>

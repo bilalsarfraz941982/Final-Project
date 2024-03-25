@@ -8,11 +8,18 @@
 }
 
 .mainNav{
+  text-align: center;
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.navigationList{
+.navigationPicture{
+  padding-top: 20px;
+}
+.navList{
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 40px;
 }
