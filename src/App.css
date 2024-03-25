@@ -16,6 +16,7 @@
 
 .navigationPicture{
   padding-top: 20px;
+  margin-right: 100px;
 }
 .navList{
   display: flex;
