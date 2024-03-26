@@ -78,20 +78,58 @@
   gap:20px
 }
 
+.masterswmenu .dish1{
+  background-color:rgb(211, 221, 218) ;
+  border-radius: 20px;
+}
+
 .masterswmenu .dish1 .nameandprice1{
  display: flex;
  flex-wrap: wrap;
- gap :150px
+ gap :110px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ margin-left: 10px;
 }
 
-.masterswmenu .dish1 .delivery{
-  display: flex;
-  flex-wrap: wrap;
-  gap:115px;
+.masterswmenu .dish1disc{
+  font-size: 11pt;
+  margin-left: 10px;
 }
 
-.masterswmenu .dish2 .nameandprice1{
+.masterswmenu .delivery{
   display: flex;
   flex-wrap: wrap;
-  gap :150px
- }
+  gap:100px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.masterswmenu .dish2{
+  background-color:rgb(211, 221, 218) ;
+  border-radius: 20px;
+}
+
+.masterswmenu .dish2 .nameandprice2{
+ display: flex;
+ flex-wrap: wrap;
+ gap :125px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ margin-left: 10px;
+}
+
+.masterswmenu .dish3{
+  background-color:rgb(211, 221, 218) ;
+  border-radius: 20px;
+}
+
+.masterswmenu .dish3 .nameandprice3{
+ display: flex;
+ flex-wrap: wrap;
+ gap :105px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ margin-left: 10px;
+}
