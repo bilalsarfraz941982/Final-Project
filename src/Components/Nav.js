@@ -1,5 +1,5 @@
 import React from 'react'
-import LLName from './Assets/littlelemonlogo.png'
+import LLName from './Assets/littlelemonlogo.png';
 
 function Nav() {
   return(
@@ -12,7 +12,7 @@ function Nav() {
             <a>Home</a>
             <a>About</a>
             <a>Menu</a>
-            <a>Reservation</a>
+            <a>Reervation</a>
             <a>Order Online</a>
             <a>Login</a>
         </ul>
