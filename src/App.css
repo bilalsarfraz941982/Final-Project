@@ -66,7 +66,7 @@
 
  h1{
   font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 30pt
 }
 
@@ -136,5 +136,28 @@
 
 .customermain{
   margin-top: 70px;
+}
+
+.customermain .cHeader{
+  text-align: center;
+}
+
+.customermain h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.customermain p {
+  margin-bottom:10px ;
+}
+
+.customerRating{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
   justify-content: center;
 }
+
+
+
