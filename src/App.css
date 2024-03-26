@@ -159,5 +159,22 @@
   justify-content: center;
 }
 
+.aboutMain{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  justify-content: center;
+  margin-top: 50px;
+  background-color:rgb(73, 94,87) ;
+}
 
+.aboutMessage{
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.aboutMain img{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
 
