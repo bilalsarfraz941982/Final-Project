@@ -18,7 +18,7 @@ function HightLights() {
           </div>
           <div className='nameandprice1'>
             <h3>Greek Salad</h3>
-            <h4>$12.99</h4>
+            <h4 style={{color:"salmon"}}>$12.99</h4>
           </div>
           <div className='dish1disc'>
             <p>The famous greek salad of crispy lettuce<br></br>, peppers, olives and our Chicago style <br></br>fetancheese, garnished with crunchy garlic <br></br>and rosemary croutons.</p>
@@ -34,7 +34,7 @@ function HightLights() {
           </div>
           <div className='nameandprice2'>
             <h3>Brunchetta</h3>
-            <h4>$5.99</h4>
+            <h4 style={{color:"salmon"}}>$5.99</h4>
           </div>
           <div className='dish1disc'>
             <p>Our Bruschetta is made from  grilled bread<br></br> that has been smeared with garlic and<br></br> seasoned with salt and olive<br></br> oil.</p>
@@ -50,7 +50,7 @@ function HightLights() {
           </div>
           <div className='nameandprice3'>
             <h3>Lemon dessert</h3>
-            <h4>$5.99</h4>
+            <h4 style={{color:"salmon"}}>$5.99</h4>
           </div>
           <div className='dish1disc'>
             <p>This comes straight from grandma’s recipe <br></br>book, every last ingredient has been<br></br> sourced and is as authentic as can<br></br> be imagined.s</p>
