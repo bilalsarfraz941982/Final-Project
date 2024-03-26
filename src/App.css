@@ -178,3 +178,34 @@
   margin-bottom: 15px;
 }
 
+.footerMain{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap:100px
+}
+
+.footerMain .logos{
+  margin-right: 180px;
+}
+
+.footerMain  h4{
+  margin-top: 10px;
+}
+
+.footerMain .smedia{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.footerMain .quickLink a{
+  color:rgb(73, 94,87);
+}
+.footerMain .Contact h5{
+  color:rgb(73, 94,87);
+  font-weight: 500;
+}

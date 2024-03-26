@@ -15,7 +15,7 @@ function Customer() {
         <div className='customer1'>
           <img src={Andy} style={{borderRadius:"100px"}}/>
           <h3>Andy</h3>
-          <p>"I ordered chicken Szechuan with <br></br>fries and brownie and custard. It was <br></br>delicious and our waiter Haris <br></br>was really helpful and nice and gave<br></br> us the best service we have had so <br></br>far coming to MyLahore. Thanks Haris."</p>
+          <p>"Excellent food, service well priced <br></br> and offer discount for NHS staff.<br></br> Very busy for Saturday lunch time."</p>
           <img src={fivestar}/>
         </div>
         <div className='customer2'>
@@ -27,7 +27,7 @@ function Customer() {
         <div className='customer3'>
         <img src={Bilal} style={{borderRadius:"100px"}}/>
           <h3>Bilal</h3>
-          <p>"I ordered chicken Szechuan with <br></br>fries and brownie and custard. It was <br></br>delicious and our waiter Haris <br></br>was really helpful and nice and gave<br></br> us the best service we have had so <br></br>far coming to MyLahore. Thanks Haris."</p>
+          <p>"Nice place to eat, has a <br></br>good variety on the menu too, <br></br>Nice decor."</p>
           <img src={fourstar}/>
         </div>
       </div>
