@@ -2,7 +2,12 @@ import React from 'react'
 
 function Customer() {
   return (
-    <div>Customer</div>
+    <div className='customermain'>
+      <div className='cHeader'>
+        <h1>What our customers say about us !!</h1>
+      </div>
+      <div></div>
+    </div>
   )
 }
 
