@@ -9,17 +9,6 @@ import {Route , Routes} from 'react-router-dom';
 
 function App() {
 
-  const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
-
-  function updateTimes(){
-    return (availableTimes)
-}
-
-const initializeTime = {availableTimes:  fetchAPI(new Date())}
-
-const [state, dispatch] = useReducer(updateTimes, initialState);
-
-
   return (
     <>
     <div className='nav'>
@@ -27,7 +16,7 @@ const [state, dispatch] = useReducer(updateTimes, initialState);
     </div>
     <Routes>
       <Route path='/' element={<Main/>}></Route>
-      <Route path='/bookingpage' element={<BookingPage availableTimes={state}  />}></Route>
+      <Route path='/bookingpage' element={<BookingPage />}></Route>
     </Routes>
     <div className='footer'>
       <Footer/>

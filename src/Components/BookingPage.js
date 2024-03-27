@@ -1,10 +1,10 @@
 import React from 'react';
 import BookingForm from './BookingForm';
 
-function BookingPage() {
+function BookingPage(props) {
   return (
     <div>
-        <BookingForm/>
+        <BookingForm />
     </div>
   )
 }
