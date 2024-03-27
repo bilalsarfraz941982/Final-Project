@@ -10,10 +10,10 @@ function Nav() {
      </div>
      <div className='navigationList'>
         <ul className='navList'>
-            <Link to='/' className='homepage'>Home</Link>
+            <Link style={{color:"rgb(73,94,87)"}} to='/' className='homepage'>Home</Link>
             <a>About</a>
             <a>Menu</a>
-            <Link to='/bookingpage' className='booking'>Reservation</Link>
+            <Link style={{color:"rgb(73,94,87)"}} to='/bookingpage' className='booking'>Reservation</Link>
             <a>Order Online</a>
             <a>Login</a>
         </ul>
