@@ -5,6 +5,7 @@ import Customer from './Customer'
 import About from './About'
 
 function Main() {
+  
   return (
     <div className='mainbox'>
         <Header/>
