@@ -4,6 +4,7 @@ import facebook from './Assets/fb.png';
 import instagram from './Assets/insta.png';
 import snapchat from './Assets/snap.png';
 import twitter from './Assets/twitter.png'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -20,9 +21,9 @@ function Footer() {
       </div>
       <div className='quickLink'>
         <h3 style={{color:"rgb(73, 94,87)"}} >Quick Link</h3><br></br>
-        <a>Home Page</a><br></br>
+        <Link style={{color:"rgb(73,94,87)"}} to='/' className='homepage'>Home</Link><br></br>
         <a>About</a><br></br>
-        <a>Reservation</a><br></br>
+        <Link style={{color:"rgb(73,94,87)"}} to='/bookingpage' className='booking'>Reservation</Link><br></br>
         <a>Order Online</a><br></br>
         <a>Login</a>
       </div>
