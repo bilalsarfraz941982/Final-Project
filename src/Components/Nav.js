@@ -1,5 +1,6 @@
 import React from 'react'
 import LLName from './Assets/littlelemonlogo.png';
+import  {Link} from 'react-router-dom';
 
 function Nav() {
   return(
@@ -9,10 +10,10 @@ function Nav() {
      </div>
      <div className='navigationList'>
         <ul className='navList'>
-            <a>Home</a>
+            <Link to='/' className='homepage'>Home</Link>
             <a>About</a>
             <a>Menu</a>
-            <a>Reervation</a>
+            <Link to='/bookingpage' className='booking'>Reservation</Link>
             <a>Order Online</a>
             <a>Login</a>
         </ul>
