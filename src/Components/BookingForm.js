@@ -8,7 +8,6 @@ function BookingForm() {
   const [firstName , setFirstname] = useState("");
   const [lastName , setLastname] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [rdate , setRdate] = useState("");
   const [rtime, setRtime] = useState("");
   const [nopeople , setNopeople] = useState("");
@@ -30,7 +29,6 @@ function BookingForm() {
       setFirstname("");
       setLastname("");
       setEmail("");
-      setPhone("");
       setRdate("");
       setRtime("");
       setNopeople("");
@@ -58,7 +56,8 @@ function BookingForm() {
               className='firstname'
               id='firstname'
               placeholder='First'
-              minLength={5}
+              minLength={4}
+              maxLength={10}
               required
               value={firstName}
               onChange={function(e){
@@ -70,7 +69,10 @@ function BookingForm() {
               type='text'
               className='lastname'
               id='lastname'
-              placeholder='  Last'
+              placeholder='Last'
+              minLength={4}
+              maxLength={10}
+              required
               value={lastName}
               onChange={function(e){
                 setLastname(e.target.value)
@@ -79,23 +81,14 @@ function BookingForm() {
                <label style={{color:"white"}} htmlFor='email'>Email <sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
               style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}}
-              type='email'
+              type={email}
               className='email'
               id='email'
               value={email}
+              required
               onChange={function(e){
                 setEmail(e.target.value)
               }}
-              /><br></br>
-               <label style={{color:"white"}} htmlFor='phone'>Phone </label><br></br>
-              <input
-              style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}}
-              type='number'
-              className='phone'
-              id='phone'
-              value={phone}
-              onChange={function(e){
-                setPhone(e.target.value)}}
               /><br></br>
                <label style={{color:"white"}} htmlFor='rdate'>Reservation Date <sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
@@ -103,6 +96,7 @@ function BookingForm() {
               type='date'
               className='rdate'
               id='rdate'
+              required
               value={rdate}
               onChange={function(e){
                 setRdate(e.target.value)}}
@@ -126,11 +120,15 @@ function BookingForm() {
               className='nopeople'
               id='nopeople'
               value={nopeople}
+              minLength={1}
+              maxLength={10}
+              required
               onChange={function(e){
                 setNopeople(e.target.value)}}
               /><br></br>
               <label htmlFor="occasion" style={{color:"white"}}>Occasion<sup style={{color:"salmon"}} >*</sup></label><br></br>
               <select value={occa}
+              required
               onChange={function(e){
                 setOcca(e.target.value)}}
               style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}} id="occasion"className='occasion'>
