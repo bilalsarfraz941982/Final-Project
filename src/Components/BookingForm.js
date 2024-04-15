@@ -19,7 +19,6 @@ function BookingForm() {
         firstName &&
         lastName&&
         email&&
-        phone&&
         rdate&&
         rtime&&
         nopeople&&
@@ -58,8 +57,8 @@ function BookingForm() {
               type='text'
               className='firstname'
               id='firstname'
-              placeholder='  First'
-              minLength={3}
+              placeholder='First'
+              minLength={5}
               required
               value={firstName}
               onChange={function(e){
@@ -88,7 +87,7 @@ function BookingForm() {
                 setEmail(e.target.value)
               }}
               /><br></br>
-               <label style={{color:"white"}} htmlFor='phone'>Phone <sup style={{color:"salmon"}} >*</sup></label><br></br>
+               <label style={{color:"white"}} htmlFor='phone'>Phone </label><br></br>
               <input
               style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}}
               type='number'
@@ -123,7 +122,7 @@ function BookingForm() {
                <label style={{color:"white"}} htmlFor='nopeople'>How many people will you be with? <sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
               style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}}
-              type='text'
+              type='number'
               className='nopeople'
               id='nopeople'
               value={nopeople}
