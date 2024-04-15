@@ -59,6 +59,8 @@ function BookingForm() {
               className='firstname'
               id='firstname'
               placeholder='  First'
+              minLength={3}
+              required
               value={firstName}
               onChange={function(e){
                 setFirstname(e.target.value)
@@ -66,7 +68,7 @@ function BookingForm() {
               /><br></br>
               <input
               style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"5px", backgroundColor:"rgb(243, 239, 221"}}
-              type='lastname'
+              type='text'
               className='lastname'
               id='lastname'
               placeholder='  Last'
@@ -144,7 +146,7 @@ function BookingForm() {
           <input type="checkbox" id="checkbox" />
           <label htmlFor="checkbox" style={{color:"white"}}> Subscribe me for the newsletter </label>
         </div>
-          <button onClick={buttonHnadler} disabled={!condition()}>Book A Table</button>
+          <button type='submit'  onClick={buttonHnadler} disabled={!condition()}>Book A Table</button>
         </div>
       <div className='image'>
         <img alt='' src={reservation} height={"400px"} width={"400px"} />
