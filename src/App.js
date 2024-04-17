@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer } from "react";
 import Nav from './Components/Nav';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
@@ -48,7 +48,7 @@ function updateTimes(state, date) {
 const navigate = useNavigate();
 function submitForm (formData) {
     if (submitAPI(formData)) {
-        navigate("/confirmed")
+        navigate('/confirmed')
     }
 }
 
