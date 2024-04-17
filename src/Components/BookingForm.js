@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import reservation from './Assets/reservation.jpg'
 
 
-function BookingForm() {
+function BookingForm(props) {
 
   
   const [firstName , setFirstname] = useState("");
@@ -37,12 +37,17 @@ function BookingForm() {
       setOcca("");
   }
 
-  const buttonHnadler = function(e){
+  const handleChange = (e) => {
+    setRdate(e);
+    props.dispatch(e);
+   }
+
+
+  const handleSubmit = function(e){
     e.preventDefault();
+   props.submitForm(e);
     reset();
-    if(nopeople === 1) alert("please select no of people more the 1")
-    else if (firstName.length <= 4) alert("please make sure first name is more then 4 character")
-    else(alert("thanks for the reservation you will get a confirmation email soon!!!"))
+
   }
 
   return (
@@ -51,7 +56,7 @@ function BookingForm() {
       <div className='leftinnerbox'>
         <h1>BOOKING</h1><br></br>
         <div className='form'>
-          <form>
+          <form onSubmit={handleSubmit}>
             <label style={{color:'white'}} htmlFor='firstname'>Name <sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
               style={{width:"400px" , height:"35px", marginTop:"5px", backgroundColor:"rgb(243, 239, 221"}}
@@ -102,19 +107,14 @@ function BookingForm() {
               required
               value={rdate}
               onChange={function(e){
-                setRdate(e.target.value)}}
+                handleChange(e.target.value)}}
               /><br></br>
                <label style={{color:"white"}} htmlFor='rtime'>Reservation Time <sup style={{color:"salmon"}} >*</sup></label><br></br>
                <select value={rtime}
               onChange={function(e){
                 setRtime(e.target.value)}} style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}} id="rtime " className='rtime' >
-               <option></option>
-               <option>17:00</option>
-               <option>18:00</option>
-               <option>19:00</option>
-               <option>20:00</option>
-               <option>21:00</option>
-              <option>22:00</option>
+               <option value="">Select a Time</option>
+               {props.availableTimes.availableTimes.map(availableTimes => {return <option key={availableTimes}>{availableTimes}</option>})}
               </select>
               <br></br>
                <label style={{color:"white"}} htmlFor='nopeople'>How many people will you be with? <sup style={{color:"salmon"}} >*</sup></label><br></br>
@@ -124,8 +124,9 @@ function BookingForm() {
               className='nopeople'
               id='nopeople'
               value={nopeople}
-              minLength={1}
-              maxLength={10}
+              min="1"
+              max="10"
+              placeholder='0'
               required
               onChange={function(e){
                 setNopeople(e.target.value)}}
@@ -136,7 +137,7 @@ function BookingForm() {
               onChange={function(e){
                 setOcca(e.target.value)}}
               style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}} id="occasion"className='occasion'>
-              <option></option>
+              <option value="">Select an Option</option>
               <option>Birthday</option>
               <option>Anniversary</option>
               </select><br></br>
@@ -148,7 +149,7 @@ function BookingForm() {
           <input type="checkbox" id="checkbox" />
           <label htmlFor="checkbox" style={{color:"white"}}> Subscribe me for the newsletter </label>
         </div>
-        <input className='button' aria-label="On Click" type={"submit"} value={"Book A Table"} onClick={buttonHnadler} disabled={!condition()}></input>
+        <input className='button' aria-label="On Click" type={"submit"} value={"Book A Table"}  disabled={!condition()}></input>
         </div>
       <div className='image'>
         <img alt='' src={reservation} height={"400px"} width={"400px"} />
