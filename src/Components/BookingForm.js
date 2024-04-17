@@ -108,6 +108,7 @@ function BookingForm() {
                <select value={rtime}
               onChange={function(e){
                 setRtime(e.target.value)}} style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}} id="rtime " className='rtime' >
+               <option></option>
                <option>17:00</option>
                <option>18:00</option>
                <option>19:00</option>
@@ -135,6 +136,7 @@ function BookingForm() {
               onChange={function(e){
                 setOcca(e.target.value)}}
               style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}} id="occasion"className='occasion'>
+              <option></option>
               <option>Birthday</option>
               <option>Anniversary</option>
               </select><br></br>
