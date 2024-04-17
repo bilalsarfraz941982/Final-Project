@@ -11,6 +11,7 @@ import {Route , Routes, useNavigate } from 'react-router-dom';
 
 function App() {
 
+
   const seededRandom = function (seed) {
     var m = 2**35 - 31;
     var a = 185852;
