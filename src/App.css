@@ -226,7 +226,7 @@
   color: white;
 }
 
-.leftinnerbox button{
+.leftinnerbox .button{
   color:rgb(73,94,87) ;
     background-color: rgb(244, 206, 20);
     width: 400px;

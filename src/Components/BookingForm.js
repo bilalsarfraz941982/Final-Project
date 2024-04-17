@@ -25,6 +25,8 @@ function BookingForm() {
       )
   }
 
+
+
   const reset = function(){
       setFirstname("");
       setLastname("");
@@ -38,8 +40,9 @@ function BookingForm() {
   const buttonHnadler = function(e){
     e.preventDefault();
     reset();
-    console.log("thanks for the reservation you will get a confirmation email soon!!!")
-    console.log(alert("thanks for the reservation you will get a confirmation email soon!!!"))
+    if(nopeople === 1) alert("please select no of people more the 1")
+    else if (firstName.length <= 4) alert("please make sure first name is more then 4 character")
+    else(alert("thanks for the reservation you will get a confirmation email soon!!!"))
   }
 
   return (
@@ -143,7 +146,7 @@ function BookingForm() {
           <input type="checkbox" id="checkbox" />
           <label htmlFor="checkbox" style={{color:"white"}}> Subscribe me for the newsletter </label>
         </div>
-          <button type='submit'  onClick={buttonHnadler} disabled={!condition()}>Book A Table</button>
+        <input className='button' aria-label="On Click" type={"submit"} value={"Book A Table"} onClick={buttonHnadler} disabled={!condition()}></input>
         </div>
       <div className='image'>
         <img alt='' src={reservation} height={"400px"} width={"400px"} />
@@ -154,3 +157,4 @@ function BookingForm() {
 }
 
 export default BookingForm
+
