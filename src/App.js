@@ -60,7 +60,7 @@ return (
     <Routes>
       <Route path='/' element={<Main/>}></Route>
       <Route path='/bookingpage' element={<BookingPage availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>}></Route>
-      <Route path="/confirmed" element={<ConfirmBooking/> } />
+      <Route path='/confirmed' element={<ConfirmBooking/> } />
     </Routes>
     <div className='footer'>
       <Footer/>
