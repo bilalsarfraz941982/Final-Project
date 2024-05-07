@@ -243,3 +243,7 @@
   margin-bottom: 15px;
   border-radius: 500px;
 }
+
+.leftinnerbox.form.firstname{
+  background-color: white;
+}

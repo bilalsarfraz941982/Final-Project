@@ -98,7 +98,7 @@ function BookingForm(props) {
                 setEmail(e.target.value)
               }}
               /><br></br>
-               <label style={{color:"white"}} htmlFor='rdate'>Reservation Date <sup style={{color:"salmon"}} >*</sup></label><br></br>
+               <label style={{color:"white"}} htmlFor='rdate'>Reservation Date<sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
               style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}}
               type='date'
