@@ -59,11 +59,11 @@ function BookingForm(props) {
           <form onSubmit={handleSubmit}>
             <label style={{color:'white'}} htmlFor='firstname'>Name <sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
-              style={{width:"400px" , height:"35px", marginTop:"5px", backgroundColor:"rgb(243, 239, 221"}}
+              style={{width:"400px" , height:"45px", marginTop:"5px", backgroundColor:"white" ,borderRadius:"4px",borderColor:"rgb(244, 206, 20)"}}
               type='text'
               className='firstname'
               id='firstname'
-              placeholder='First'
+              placeholder='  First'
               minLength={4}
               maxLength={10}
               required
@@ -73,11 +73,11 @@ function BookingForm(props) {
               }}
               /><br></br>
               <input
-              style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"5px", backgroundColor:"rgb(243, 239, 221"}}
+              style={{width:"400px" , height:"45px", marginTop:"5px", backgroundColor:"white" ,borderRadius:"4px",borderColor:"rgb(244, 206, 20)"}}
               type='text'
               className='lastname'
               id='lastname'
-              placeholder='Last'
+              placeholder='  Last'
               minLength={4}
               maxLength={10}
               required
@@ -88,7 +88,7 @@ function BookingForm(props) {
               /><br></br>
                <label style={{color:"white"}} htmlFor='email'>Email <sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
-              style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}}
+              style={{width:"400px" , height:"45px", marginTop:"5px", backgroundColor:"white" ,borderRadius:"4px",borderColor:"rgb(244, 206, 20)"}}
               type={email}
               className='email'
               id='email'
@@ -100,7 +100,7 @@ function BookingForm(props) {
               /><br></br>
                <label style={{color:"white"}} htmlFor='rdate'>Reservation Date<sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
-              style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}}
+              style={{width:"400px" , height:"45px", marginTop:"5px", backgroundColor:"white" ,borderRadius:"4px",borderColor:"rgb(244, 206, 20)"}}
               type='date'
               className='rdate'
               id='rdate'
@@ -110,23 +110,23 @@ function BookingForm(props) {
                 handleChange(e.target.value)}}
               /><br></br>
                <label style={{color:"white"}} htmlFor='rtime'>Reservation Time <sup style={{color:"salmon"}} >*</sup></label><br></br>
-               <select value={rtime}
+               <select  value={rtime}
               onChange={function(e){
-                setRtime(e.target.value)}} style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}} id="rtime " className='rtime' >
+                setRtime(e.target.value)}} style={{width:"400px" , height:"45px", marginTop:"5px", backgroundColor:"white" ,borderRadius:"4px",borderColor:"rgb(244, 206, 20)"}} id="rtime " className='rtime' >
                <option value="">Select a Time</option>
                {props.availableTimes.availableTimes.map(availableTimes => {return <option key={availableTimes}>{availableTimes}</option>})}
               </select>
               <br></br>
                <label style={{color:"white"}} htmlFor='nopeople'>How many people will you be with? <sup style={{color:"salmon"}} >*</sup></label><br></br>
               <input
-              style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}}
+              style={{width:"400px" , height:"45px", marginTop:"5px", backgroundColor:"white" ,borderRadius:"4px",borderColor:"rgb(244, 206, 20)"}}
               type='number'
               className='nopeople'
               id='nopeople'
               value={nopeople}
               min="1"
               max="10"
-              placeholder='0'
+              placeholder=' 0'
               required
               onChange={function(e){
                 setNopeople(e.target.value)}}
@@ -136,13 +136,13 @@ function BookingForm(props) {
               required
               onChange={function(e){
                 setOcca(e.target.value)}}
-              style={{width:"400px" , height:"35px", marginTop:"5px",marginBottom:"10px", backgroundColor:"rgb(243, 239, 221"}} id="occasion"className='occasion'>
+              style={{width:"400px" , height:"45px", marginTop:"5px", backgroundColor:"white" ,borderRadius:"4px", borderColor:"rgb(244, 206, 20)"}} id="occasion"className='occasion'>
               <option value="">Select an Option</option>
               <option>Birthday</option>
               <option>Anniversary</option>
               </select><br></br>
               <label style={{color:"white"}} htmlFor='comment'>Notes</label><br></br>
-              <textarea style={{marginTop:"5px", backgroundColor:"rgb(243, 239, 221"}} id="comment" name="comment" rows="4" cols="52" placeholder='enter your comments here .....'></textarea>
+              <textarea style={{marginTop:"5px", backgroundColor:"white"}} id="comment" name="comment" rows="4" cols="52" placeholder='enter your comments here .....'></textarea>
           </form>
         </div><br></br>
         <div>
